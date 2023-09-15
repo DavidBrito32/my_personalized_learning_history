@@ -1,0 +1,104 @@
+O que precisamos saber para utilizar o SCSS (SASS)?
+
+-> O Sass ele e um pre-processador CSS, que possui maneiras distintas e mais praticas de utilizar do que o proprio CSS convencional!
+
+A DECLARACAO DE VARIAVEIS NO SASS:
+
+se inicia assim:
+$<NOME_DA_VARIAVEL>: pode receber, desde cores em hexadecimal, como tamanho de fontes, familia de fontes e etc... eh basicamente como se fosse uma tag no css comum (a tag na hora de estilizar).
+
+- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -
+================================================================================================================================================================================================================
+- - - - - - - - -- - - - - - - - -- - - - - - - - --- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -
+
+
+outra coisa bastante util no SASS, eh sua possibilidade de utilizar o Bloco principal e escrever todo o codigo de suas tags agrupadas dentro do seu bloco: 	EX:
+
+header {
+
+	width: 100%
+	heigth: 100vh;
+
+	nav {
+		//configuracoes e etc...
+	}
+
+}
+
+como utilizar pseudo seletores e pseudo elementos? usando o E-COMERCIAL <&> : para pseudo elementos e :: para pseudo seletores....
+
+
+
+- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -
+================================================================================================================================================================================================================
+- - - - - - - - -- - - - - - - - -- - - - - - - - --- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -
+
+
+outro recurso bem interessante, e a possibilidade de usar os imports de outras paginas de estilo sass para minimizar grandes paginas web...
+
+como usar: 
+
+
+@import 'ARQUIVO' -> nao ira aparecer a extensao pois ele ja identifica automaticamente os arquivos
+
+DA MESMA MANEIRA VOCE PODE SEPARAR SUAS VARIAVEIS EM OUTRA FOLHA DE ESTILO, PARA FACILITAR A ORGANIZACAO;
+
+
+- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -
+================================================================================================================================================================================================================
+- - - - - - - - -- - - - - - - - -- - - - - - - - --- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -
+
+
+OUTRO RECURSO MUITO IMPORTANTE DO SASS EH O MIXING:
+
+Basicamente o mixing eh como se fosse funcoes no javascript ou em qualquer outra linguagem de programacao;
+
+COMO UTILIZAR:
+
+-> 
+
+@mixin <identificador_Da_Funcao>(<AQUI ACEITA PARAMETROS>) {
+	//QUALQUER PROPRIEDADE
+
+	EX:
+	background-color: <parametro>
+}
+
+- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -
+================================================================================================================================================================================================================
+- - - - - - - - -- - - - - - - - -- - - - - - - - --- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -- - - - - - - - - - - - - - - - - -- - - - - - - - -
+-> PARa chamar uma funcao que esteja em outra folha de estilos utilize o:
+
+-> @includes <funcao>(e inclua os parametros se for o caso);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
