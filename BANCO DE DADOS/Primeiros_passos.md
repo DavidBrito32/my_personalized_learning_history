@@ -1,13 +1,3 @@
-# Primeiros Passos com o **MariaDB**
-
-<!-- # 1 SEMPRE UTILIZAR PONTO E VIRGULA NO FINAL DAS EXPRESSÕES -->
-
-# INSTALAÇÃO DO MARIADB (MYSQL) (LINUX DEBIAN);
-
-**Passo A passo Terminal**
-
-## |\_-> sudo apt install mariadb-server -y
-
 **DEPOIS PRECISAMOS LOGAR NO MYSQL**
 
 ## |\_-> sudo mysql -u root -p
@@ -22,7 +12,7 @@
 
 ## |\_-> (QUIT) PARA SAIR;
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - #\*\*
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
 
 # CASO TENHA ACABADO DE INSTALAR PELA PRIMEIRA VEZ: USE ESSE PASSO A PASSO;
 
@@ -114,4 +104,53 @@ POSSUI NENHUMA TABELA CRIADA
 
 #### |\_-> DROP TABLE <nome-da-tabela>;
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+# **mysql / mariaDB** Primeiros Passos -
+
+### INSTALAÇÃO DO MARIADB (MYSQL) (LINUX DEBIAN);
+
+**Passo A passo Terminal**
+
+## |\_-> **sudo apt install mariadb-server -y**
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+# SEMPRE UTILIZAR PONTO E VIRGULA NO FINAL DAS EXPRESSÕES
+
+
+
+
+
+
+## AULA 
+
+### 1º -> SHOW DATABASES; (SERVE PARA VER OS BANCOS DE DADOS JA EXISTENTES NO CLIENT)
+
+### 2º -> CREATE DATABASE IF NOT EXISTIS <Nome-do-Banco>; 
+                      |_-> SERVE PARA CASO NÃO EXISTA, CRIE O BANCO COM O    NOME REFERIDO;
+
+### 3º -> DROP DATABASE <Nome-do-Banco>; (SERVE PARA DELETAR UM DATABASE)
+
+### 4º -> USE <Nome-Do-Banco>; (Serve para usar o banco);
+
+### 5º -> CREATE TABLE IF NOT EXISTIS <Nome-Da-Tabela>(
+    user_id <TIPO> NOT NULL AUTO_INCREMENT,
+    user_NAME <TIPO<VARCHAR(50)>> NOT NULL,
+    user_email <TIPO<VARCHAR(50)>> NOT NULL,
+    PRIMARY KEY (user_id)
+);
+
+
+### 6º -> SELECT * FROM user;
+
+
+### 6º (a) -> SELECT user_id, user_name FROM <tabela>;
+
+### 7º -> INSERT INTO user (COLUNAS) VALUES (VALORES)
+                         |_-> COLOCAR TODAS AS COLUNAS OBRIGATORIAS, PARA CADA COLUNA COLOCAR A MESMA QUANTIDADE RESPECTIVA DE VALORES A SEREM INSERIDOS;
+
+### 8º -> SELECT * FROM user WHERE name LIKE '%<PARAMETRO>%';
+
+### 9º -> ALTER TABLE <user> MODIFY email varchar(50) UNIQUE <pode colocar dentro da tabela na hora da criação> DEFINE QUE ESTE CAMPO NÃO PODERÁ SE REPETIR;
 
