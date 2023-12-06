@@ -153,4 +153,3 @@ POSSUI NENHUMA TABELA CRIADA
 ### 8º -> SELECT * FROM user WHERE name LIKE '%<PARAMETRO>%';
 
 ### 9º -> ALTER TABLE <user> MODIFY email varchar(50) UNIQUE <pode colocar dentro da tabela na hora da criação> DEFINE QUE ESTE CAMPO NÃO PODERÁ SE REPETIR;
-
